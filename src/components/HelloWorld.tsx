@@ -1,5 +1,5 @@
 function HelloWorld() {
-    return <h1>My Favorite Foods</h1>;
+    return <h1>UserInformation</h1>;
 }
 
 export default HelloWorld;
