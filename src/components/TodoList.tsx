@@ -5,8 +5,13 @@ import TodoItem from "./TodoItem";
 function TodoList() {
     //Todosという初期値が空の配列を定義する
     //この配列には、Todoリストが格納される
+    //useState<string[]> で文字列型の配列を管理　　string[]で文字列の型定義
+    //useStateで状態管理した時に管理する状態がstring出ないからここで定義している
     const [todos, setTodos] = useState<string[]>([]);
     const [newTodo, setNewTodo] = useState("");
+
+    //新しいTodoをtodos配列に追加する関数
+    //スプレット構文を使って、既存のtodosにnewTodoを追加している。
     const addTodo = () => {
         setTodos([...todos, newTodo]);
         setNewTodo("");
