@@ -1,5 +1,5 @@
 function HelloWorld() {
-    return <h1>Counter App</h1>;
+    return <h1>Todo List</h1>;
 }
 
 export default HelloWorld;
