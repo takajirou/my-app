@@ -3,6 +3,8 @@ import Foods from "./components/Foods";
 import HelloWorld from "./components/HelloWorld";
 import HelloUser from "./components/HelloUserProps";
 import Counter from "./components/UseState";
+import TodoItem from "./components/TodoItem";
+import TodoList from "./components/TodoList";
 
 function App() {
     return (
@@ -14,6 +16,7 @@ function App() {
             <HelloUser name={"Ken"} age={22} hobby={["Running", "swiming"]} /> */}
             <Counter CountNumber={5} />
             <Counter CountNumber={10} />
+            <TodoList />
         </div>
     );
 }
