@@ -2,15 +2,18 @@ import "./App.css";
 import Foods from "./components/Foods";
 import HelloWorld from "./components/HelloWorld";
 import HelloUser from "./components/HelloUserProps";
+import Counter from "./components/UseState";
 
 function App() {
     return (
         <div>
             <HelloWorld />
             {/* <Foods /> */}
-            <HelloUser name={"Takuto"} age={25} hobby={["Reading", "Cycling"]} />
+            {/* <HelloUser name={"Takuto"} age={25} hobby={["Reading", "Cycling"]} />
             <HelloUser name={"Hanako"} age={30} hobby={["Cooking", "Travelong"]} />
-            <HelloUser name={"Ken"} age={22} hobby={["Running", "swiming"]} />
+            <HelloUser name={"Ken"} age={22} hobby={["Running", "swiming"]} /> */}
+            <Counter CountNumber={5} />
+            <Counter CountNumber={10} />
         </div>
     );
 }
